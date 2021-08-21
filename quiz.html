@@ -9,50 +9,51 @@
 <body>
     <nav class="navigation">
         <div class="nav-brand">Fun With Triangles</div>
+        <link rel="stylesheet" href="./style3.css">
         <ul class="list-non-bullet nav-pills">
-            <li class="list-item-inline">
+            
                 <a class="link" href="./check.html">Triangle Checker</a>
-            </li>
-            <li class="list-item-inline">
+            
                 <a class="link  link-active" href="/">Triangle Quiz</a>
-            </li>
-            <li class="list-item-inline">
+            
                 <a class="link" href="./findhypotenuse.html">Hypotenuse Finder</a>
-            </li>
-            <li class="list-item-inline">
+            
                 <a class="link" href="./area.html">Area Finder</a>
-            </li>
+            
         </ul>
     </nav>
+    <hr class="heading">
+        <div class="container">
     <h1>Lets See If You Can Answer Some Questions</h1>
     <form class="quiz-form">
     <div class="question-container">
-        <p>If a triangle has one angle 90 degree, what is it called?</p>
-        <label>
+        <p class="question">If a triangle has one angle 90 degree, what is it called?</p>
+        <label class="dimensions">
             <input type="radio" name="question1" value="acute triangle">acute triangle
         </label>
-        <label>
-            <input type="radio" name="question1" value="obtuse triangle">obtuse triangle
+        <label class="dimensions">
+            <input  type="radio" name="question1" value="obtuse triangle">obtuse triangle
         </label>
-        <label>
+        <label class="dimensions">
             <input type="radio" name="question1" value="right angled triangle">right angled triangle
         </label>
     </div>
     <div class="question-container">
-        <p>What is the third angle for the triangle where angle1 is 45 degree and angle2 is also 45 degrees.</p>
-        <label>
+        <p class="question">What is the third angle for the triangle where angle1 is 45 degree and angle2 is also 45 degrees.</p>
+        <label class="dimensions">
             <input type="radio" name="question2" value="45 degree">45 degree
         </label>
-        <label>
+        <label class="dimensions">
             <input type="radio" name="question2" value="60 degree">60 degree
         </label>
-        <label>
+        <label class="dimensions">
             <input type="radio" name="question2" value="90 degree">90 degree
         </label>
     </div>
     </form>
     <button id="score-button">View Score</button>
     <div id="output"></div>
+    </div>
     <script src="./quizapp.js"></script>
 </body>
 </html>
